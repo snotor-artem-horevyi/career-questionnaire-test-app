@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/career-questionnaire-test-app/static/css/main.e91db844.css",
-    "main.js": "/career-questionnaire-test-app/static/js/main.e08a318e.js",
+    "main.css": "/career-questionnaire-test-app/static/css/main.812a2762.css",
+    "main.js": "/career-questionnaire-test-app/static/js/main.0ed87abd.js",
     "static/js/453.a6a97343.chunk.js": "/career-questionnaire-test-app/static/js/453.a6a97343.chunk.js",
     "static/media/globe.svg": "/career-questionnaire-test-app/static/media/globe.0ebcbe1c24107c392d009cbe1418bb76.svg",
     "index.html": "/career-questionnaire-test-app/index.html",
-    "main.e91db844.css.map": "/career-questionnaire-test-app/static/css/main.e91db844.css.map",
-    "main.e08a318e.js.map": "/career-questionnaire-test-app/static/js/main.e08a318e.js.map",
+    "main.812a2762.css.map": "/career-questionnaire-test-app/static/css/main.812a2762.css.map",
+    "main.0ed87abd.js.map": "/career-questionnaire-test-app/static/js/main.0ed87abd.js.map",
     "453.a6a97343.chunk.js.map": "/career-questionnaire-test-app/static/js/453.a6a97343.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e91db844.css",
-    "static/js/main.e08a318e.js"
+    "static/css/main.812a2762.css",
+    "static/js/main.0ed87abd.js"
   ]
 }
