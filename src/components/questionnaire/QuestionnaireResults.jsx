@@ -45,7 +45,7 @@ export default function QuestionnaireResults({
 
   return (
     <div className="p-2 w-full">
-      <h1 className="pb-4 text-2xl font-bold text-center uppercase">
+      <h1 className="my-2 pb-4 text-2xl font-bold text-center uppercase">
         Career Results
       </h1>
 

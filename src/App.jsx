@@ -1,6 +1,6 @@
 import QuestionnairePage from "./pages/Questionnaire";
 // import HomePage from "./pages/Home";
-import { Route, Routes } from "react-router-dom";
+// import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (

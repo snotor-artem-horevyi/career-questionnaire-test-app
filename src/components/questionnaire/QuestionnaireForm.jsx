@@ -23,10 +23,10 @@ export default function QuestionnaireForm({
 
   return (
     <div className="p-2 w-full">
-      <h1 className="pb-4 text-2xl font-bold text-center uppercase">Career Questionnaire</h1>
+      <h1 className="my-2 pb-4 text-2xl font-bold text-center uppercase">Career Questionnaire</h1>
       <form>
         {questions.map(
-          (question) =>
+          (question, i) =>
             ({
               "single-choice": (
                 <SingleQuestion
@@ -34,14 +34,18 @@ export default function QuestionnaireForm({
                   language={language}
                   key={question.id}
                   answers={answers}
+                  position={i+1}
+                  total={questions.length}
                   onAnswer={onAnswer}
-                />
-              ),
+                  />
+                ),
               comparison: (
                 <ComparisonQuestion
-                  question={question}
+                question={question}
                   language={language}
                   key={question.id}
+                  position={i+1}
+                  total={questions.length}
                   answers={answers}
                   onAnswer={onAnswer}
                 />

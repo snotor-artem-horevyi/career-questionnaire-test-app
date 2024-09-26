@@ -1,18 +1,19 @@
 import Input from "../form/Input";
 
-export default function SingleQuestion({ question, answers, language, onAnswer }) {
+export default function SingleQuestion({ question, answers, language, onAnswer, position, total }) {
 
   return (
     <fieldset className="mb-5" key={question.id}>
       <legend className="block text-lg font-medium mb-2">
-        {question[language].question}
+        <span className="mr-2"><b>{position}</b> / <b>{total}</b></span>
+        <span>{question[language].question}</span>
       </legend>
 
       <div className="">
         {question[language].options.map((option, i) => (
           <div
             key={question.id + i}
-            className="my-1 border rounded p-1"
+            className="my-1"
           >
             <Input
               type="radio"

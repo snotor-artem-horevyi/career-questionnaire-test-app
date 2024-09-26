@@ -5,10 +5,16 @@ export default function ComparisonQuestion({
   answers,
   language,
   onAnswer,
+  position,
+  total,
 }) {
   return (
     <fieldset className="mb-5" key={question.id}>
       <legend className="block text-lg font-medium mb-2">
+        <span className="mr-2">
+          <b>{position}</b> / <b>{total}</b>
+        </span>
+
         {question[language].question}
       </legend>
 
@@ -16,7 +22,7 @@ export default function ComparisonQuestion({
         {question[language].pairs.map((pair, i) => (
           <div
             key={question.id + i}
-            className="col-span-2 grid grid-cols-2 gap-1 my-1 border rounded p-1"
+            className="col-span-2 grid grid-cols-2 gap-3 my-1 p-1 pb-2 border-b border-dashed"
           >
             <Input
               type="radio"
@@ -27,7 +33,7 @@ export default function ComparisonQuestion({
               onChange={(e) => {
                 onAnswer(`${question.id}.${pair.id}`, e.target.value);
               }}
-              />
+            />
             <Input
               type="radio"
               label={`B. ${pair.b}`}
