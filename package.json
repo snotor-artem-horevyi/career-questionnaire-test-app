@@ -1,7 +1,7 @@
 {
   "name": "app",
   "version": "0.1.0",
-  "homepage": "https://snotor-artem-horevyi.github.io",
+  "homepage": "https://snotor-artem-horevyi.github.io/career-questionnaire-test-app/",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
