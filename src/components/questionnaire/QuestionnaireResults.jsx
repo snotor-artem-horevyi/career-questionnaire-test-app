@@ -49,7 +49,7 @@ export default function QuestionnaireResults({
         Career Results
       </h1>
 
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-2 gap-2 mb-2">
         {Object.keys(userScores).map((carrerId, index) => {
           return (
             <div

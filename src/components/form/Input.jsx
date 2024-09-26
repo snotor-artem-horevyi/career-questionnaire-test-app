@@ -5,7 +5,7 @@ export default function Input({ type, label, name, value, checked, onChange }) {
       {/* <label className="inline-block w-full border rounded p-2 px-3 cursor-pointer hover:-ml-2 hover:shadow-lg"> */}
       <label
         className={css(
-          "relative flex items-center gap-2 w-full",
+          "relative flex items-center gap-3 w-full",
           "border rounded p-2 px-3 cursor-pointer",
           "hover:-ml-2 hover:shadow-lg transform duration-300",
           checked && "bg-lime-500 text-white border-lime-400 font-semibold",
@@ -15,7 +15,7 @@ export default function Input({ type, label, name, value, checked, onChange }) {
           type={type}
           name={name}
           value={value}
-          className="mr-2 peer shrink-0 appearance-none w-4 h-4 border border-blue-400 rounded-sm mt-1 checked:border-0"
+          className=" peer shrink-0 appearance-none w-4 h-4 border border-blue-400 rounded-sm checked:border-0"
           checked={checked ?? false}
           onChange={onChange}
         />
