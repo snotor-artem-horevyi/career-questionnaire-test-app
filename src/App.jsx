@@ -5,9 +5,11 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="min-h-screen flex flex-row border-b">
-      <Routes>
-        <Route path="/" element={<QuestionnairePage />} />
-      </Routes>
+      {/* <Routes> */}
+        {/* <Route path="/" element={<QuestionnairePage />} /> */}
+      {/* </Routes> */}
+
+      <QuestionnairePage />
     </div>
   );
 }
