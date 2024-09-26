@@ -11,7 +11,7 @@ export default function ComparisonQuestion({
   return (
     <fieldset className="mb-5" key={question.id}>
       <legend className="block text-lg font-medium mb-2">
-        <span className="mr-2">
+        <span className="mr-3 text-base">
           <b>{position}</b> / <b>{total}</b>
         </span>
 

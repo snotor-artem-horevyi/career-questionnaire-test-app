@@ -8,7 +8,7 @@ export default function Input({ type, label, name, value, checked, onChange }) {
           "relative flex items-center gap-2 w-full",
           "border rounded p-2 px-3 cursor-pointer",
           "hover:-ml-2 hover:shadow-lg transform duration-300",
-          checked && "bg-lime-500 text-white border-lime-400",
+          checked && "bg-lime-500 text-white border-lime-400 font-semibold",
         )}
       >
         <input
