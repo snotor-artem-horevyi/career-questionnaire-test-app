@@ -52,7 +52,10 @@ export default function QuestionnaireForm({
               ),
             })[question.type]
         )}
+              <div className="flex justify-center my-6 px-10">
+
         <Button label="FINISH" onClick={finish} />
+        </div>
       </form>
     </div>
   );

@@ -53,17 +53,17 @@ export default function QuestionnaireResults({
         {Object.keys(userScores)
           .map((key) => [key, userScores[key]])
           .sort((a, b) => b[1] - a[1])
-          .map(obj => obj[0])
+          .map((obj) => obj[0])
           .map((carrerId, index) => {
             return (
               <div
                 key={index}
-                className="flex flex-col items-center p-4 border-2 rounded-lg"
+                className="flex flex-col items-center justify-between p-4 border-2 rounded-lg bg-gradient-to-r from-violet-200 to-pink-200"
               >
-                <div className="text-lg">
+                <div className="text-lg text-center">
                   {careers[carrerId][language] ?? "No title"}
                 </div>
-                <div className="text-2xl font-bold">
+                <div className="mt-2 text-5xl font-bold text-slate-600">
                   {userScores[carrerId] ?? "00"}
                 </div>
               </div>
@@ -71,7 +71,9 @@ export default function QuestionnaireResults({
           })}
       </div>
 
-      <Button label="CHANGE ANSWERS" onClick={goBack} />
+      <div className="flex justify-center mt-6">
+        <Button label="CHANGE ANSWERS" onClick={goBack} secondary={true} />
+      </div>
     </div>
   );
 }
