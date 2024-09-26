@@ -50,21 +50,25 @@ export default function QuestionnaireResults({
       </h1>
 
       <div className="grid grid-cols-2 gap-2 mb-2">
-        {Object.keys(userScores).map((carrerId, index) => {
-          return (
-            <div
-              key={index}
-              className="flex flex-col items-center p-4 border-2 rounded-lg"
-            >
-              <div className="text-lg">
-                {careers[carrerId][language] ?? "No title"}
+        {Object.keys(userScores)
+          .map((key) => [key, userScores[key]])
+          .sort((a, b) => b[1] - a[1])
+          .map(obj => obj[0])
+          .map((carrerId, index) => {
+            return (
+              <div
+                key={index}
+                className="flex flex-col items-center p-4 border-2 rounded-lg"
+              >
+                <div className="text-lg">
+                  {careers[carrerId][language] ?? "No title"}
+                </div>
+                <div className="text-2xl font-bold">
+                  {userScores[carrerId] ?? "00"}
+                </div>
               </div>
-              <div className="text-2xl font-bold">
-                {userScores[carrerId] ?? "00"}
-              </div>
-            </div>
-          );
-        })}
+            );
+          })}
       </div>
 
       <Button label="CHANGE ANSWERS" onClick={goBack} />
